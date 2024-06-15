@@ -1,0 +1,30 @@
+---
+import ExperienciaItem from "./ExperienciaItem.astro";
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Desarollador Wordpress",
+    company: "Ramaban Marketing",
+    description:
+      "Soy Desarollador WordPres, Me dedico a crear Sitio web personalizados con la herramienta WordPres Tambien soy el encargado de Administar los sitio web de las direntes conpañias ",
+    link: "https://ramadanmktg.com/index.html",
+  },
+  {
+    date: "Abril 2019",
+    title: "Desarollador Font-end Jr ",
+    company: "Cotrautol",
+    description:
+      "Responsable del sitio web de la compañia, Ayude en la Mejora del sito web y en su rendimiento ",
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienciaItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
