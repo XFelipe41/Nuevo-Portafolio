@@ -4,6 +4,11 @@ import NextJS from "./icons/NextJS.astro";
 import Tailwind from "./icons/Tailwind.astro";
 import Link from "./icons/Link.astro";
 import LinkButton from "./LinkButton.astro";
+import React from "./icons/React.astro";
+import HtmlIcon from "./icons/HtmlIcon.astro";
+import CSSIcon from "./icons/CSSIcon.astro";
+import JavaScriptIcon from "./icons/JavaScriptIcon.astro";
+import AstroIcon from "./icons/AstroIcon.astro";
 
 const TAGS = {
   NEXT: {
@@ -16,6 +21,31 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
+  REACT: {
+    name: "React",
+    class: "bg-[#003159] text-white",
+    icon: React,
+  },
+  HTML: {
+    name: "html",
+    class: "bg-black text-white",
+    icon: HtmlIcon,
+  },
+  CSS: {
+    name: "css",
+    class: "bg-[#003159] text-white",
+    icon: CSSIcon,
+  },
+  JavaSCRIPT: {
+    name: "JavaScript",
+    class: "bg-black text-white",
+    icon: JavaScriptIcon,
+  },
+  Astro: {
+    name: "Astro",
+    class: "bg-black text-white",
+    icon: AstroIcon,
+  },
 };
 const PROJECTS = [
   {
@@ -25,7 +55,7 @@ const PROJECTS = [
     link: "https://guitarra-la-nextjs-lxoo5ufvu-xfelipe41.vercel.app/",
     github: "https://github.com/XFelipe41/GuitarraLA_Nextjs",
     image: "/Proyectos/GuitarLA.png",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.JavaSCRIPT],
   },
   {
     title: "Bienes Raices",
@@ -34,7 +64,7 @@ const PROJECTS = [
     link: "https://adventjs.dev",
     github: "https://github.com/XFelipe41/GuitarraLA_Nextjs",
     image: "/Proyectos/BR.png",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.JavaSCRIPT],
   },
   {
     title: "Blog de café con Consejos y Cursos",
@@ -43,7 +73,52 @@ const PROJECTS = [
     link: "https://blogcafe-1841822.netlify.app/",
     github: "https://github.com/XFelipe41/GuitarraLA_Nextjs",
     image: "/Proyectos/BlocCafe.png",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.JavaSCRIPT],
+  },
+  {
+    title: "Cotiza Criptomonedas al Instante",
+    description:
+      "un cotizador de criptomonedas construido con React y Vite. Este cotizador utiliza una API externa para recibir datos en tiempo real y mostrarlos de forma precisa y eficiente. Aptitudes: React.js · React Hooks · Hojas de estilos en cascada (CSS) · JavaScript · Pruebas API",
+    link: "https://criptoalinstante.netlify.app/",
+    github: "https://github.com/XFelipe41/CotizadorDeCriptomonedas",
+    image: "/Proyectos/Divisas.png",
+    tags: [TAGS.REACT, TAGS.JavaSCRIPT, TAGS.TAILWIND],
+  },
+  {
+    title: "Clon Landing Page Tesla",
+    description:
+      "Este proyecto es una réplica de la página de inicio de Tesla, desarrollado como parte del curso de Astro impartido por Midudev. Utilizando tecnologías modernas como HTML, JavaScript, Astro y Tailwind CSS, he creado una versión fiel y funcional del sitio web de Tesla, destacando tanto su diseño limpio y minimalista como su rendimiento optimizado.",
+    link: "https://landing-pega-clon-tesla-fc.netlify.app/",
+    github: "https://github.com/XFelipe41/Landing-Pega-Clon-Tesla",
+    image: "/Proyectos/Tesla.png",
+    tags: [TAGS.Astro, TAGS.JavaSCRIPT, TAGS.TAILWIND],
+  },
+  {
+    title: "Planificador de Gastos",
+    description:
+      "Planificador de Gastos Realizado con React y vite te ayudará a optimizar tus finanzas de manera eficiente y te permitirá mantener un control adecuado de tus gastos",
+    link: "https://planificador-d-gastos.netlify.app/",
+    github: "https://github.com/XFelipe41/PDeGastos",
+    image: "/Proyectos/Planificador.png",
+    tags: [TAGS.REACT, TAGS.JavaSCRIPT, TAGS.TAILWIND],
+  },
+  {
+    title: "Space x Lanzamientos",
+    description:
+      "Este sitio web te permite explorar todos los lanzamientos de SpaceX con detalle. 💫 Usando tecnologías modernas como Astro, Tailwind CSS y la API de SpaceX, he creado una experiencia única inspirada en el curso de Astro de Midudev.",
+    link: "https://lancamientos-api-spacex.netlify.app/",
+    github: "https://github.com/XFelipe41/SpaceX-Api-midulive",
+    image: "/Proyectos/Space.png",
+    tags: [TAGS.Astro, TAGS.JavaSCRIPT, TAGS.TAILWIND],
+  },
+  {
+    title: "Gestor de citas veterinarias",
+    description:
+      "El gestor de citas veterinarias en React con Tailwind CSS y Vite es una app para veterinarios que permite gestionar citas de manera eficiente. Permite programar citas, gestionar clientes y mascotas, y enviar recordatorios automáticos. Además, cumple con buenas prácticas, asegurando escalabilidad y fácil mantenimiento.El gestor de citas veterinarias en React con Tailwind CSS y Vite es una app para veterinarios que permite gestionar citas de manera eficiente. Permite programar citas, gestionar clientes y mascotas, y enviar recordatorios automáticos. Además, cumple con buenas prácticas, asegurando escalabilidad y fácil mantenimiento.",
+    link: "https://gestordecitas-react.netlify.app/",
+    github: "https://github.com/XFelipe41/GestorDeCitas_React",
+    image: "/Proyectos/Veterinaria.png",
+    tags: [TAGS.REACT, TAGS.JavaSCRIPT, TAGS.TAILWIND],
   },
 ];
 ---
